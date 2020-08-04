@@ -5,19 +5,13 @@ filetype off
 
 call plug#begin()
 
-"if has('nvim')
-"    Plug 'shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
-"else
-"    Plug 'shougo/deoplete.nvim'
-"    Plug 'roxma/nvim-yarp'
-"    Plug 'roxma/vim-hug-neovim-rpc'
-"endif
 Plug 'Valloric/YouCompleteMe'
-"Plug 'shougo/deoplete-clangx'
+"Plug 'dracula/vim', {'as':'dracula'}   "color scheme
 Plug 'morhetz/gruvbox'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 filetype indent on
@@ -25,10 +19,9 @@ filetype indent on
 
 "----------------Setting----------------"
 colorscheme gruvbox
+"colorscheme dracula
 
 set enc=utf-8                          " 文字編碼加入 utf8
-"set pyxversion=3
-"let g:python3_host_prog="/usr/bin/python3"
 set ai                                 " 自動縮排
 syntax on                              " 開啟上色模式
 set background=dark                    " 啟用暗色背景模式
@@ -84,7 +77,17 @@ endif
 
 "--------------airline--------------"
 set laststatus=2
+let g:airline_theme='base16'
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'default'
+
+
+"--------------Nerdtree--------------"
+map <F3> :NERDTreeMirror<CR>
+map <F3> :NERDTreeToggle<CR>
 
 "--------------Parentheses--------------"
 "inoremap ( ()<Esc>i
