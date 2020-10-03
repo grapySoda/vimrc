@@ -32,30 +32,30 @@ set number                             " 顯示行號
 set relativenumber                     " 顯示相對行號
 set ic                                 " 搜尋不分大小寫
 set expandtab                          " 使用空白取代 Tab
-set tabstop=4                          " 4 個空白鍵取代 Tab
-set shiftwidth=4                       " 縮排所需的空白鍵位元數
+set tabstop=8                          " 4 個空白鍵取代 Tab
+set shiftwidth=8                       " 縮排所需的空白鍵位元數
 
 
 "----------------YCM----------------"
-let g:ycm_server_python_interpreter='/usr/bin/python3'
-let g:ycm_global_ycm_extra_conf='~/.vim/plugged/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py'
-let g:ycm_add_preview_to_completeopt = 0
-let g:ycm_show_diagnostics_ui = 0
-let g:ycm_server_log_level = 'info'
-let g:ycm_min_num_identifier_candidate_chars = 2
-let g:ycm_collect_identifiers_from_comments_and_strings = 1
-let g:ycm_complete_in_strings=1
-let g:ycm_key_invoke_completion = '<c-z>'
-set completeopt=menu,menuone
-
-noremap <c-z> <NOP>
-
-let g:ycm_semantic_triggers =  {
-           \ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
-           \ 'cs,lua,javascript': ['re!\w{2}'],
-           \ }
-
-
+"let g:ycm_server_python_interpreter='/usr/bin/python3'
+"let g:ycm_global_ycm_extra_conf='~/.vim/plugged/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py'
+"let g:ycm_add_preview_to_completeopt = 0
+"let g:ycm_show_diagnostics_ui = 0
+"let g:ycm_server_log_level = 'info'
+"let g:ycm_min_num_identifier_candidate_chars = 2
+"let g:ycm_collect_identifiers_from_comments_and_strings = 1
+"let g:ycm_complete_in_strings=1
+"let g:ycm_key_invoke_completion = '<c-z>'
+"set completeopt=menu,menuone
+"
+"noremap <c-z> <NOP>
+"
+"let g:ycm_semantic_triggers =  {
+"           \ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
+"           \ 'cs,lua,javascript': ['re!\w{2}'],
+"           \ }
+"
+"
 "--------------vim-gutentags--------------"
 set tags=./.tags;,.tags
 
