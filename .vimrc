@@ -5,7 +5,7 @@ filetype off
 
 call plug#begin()
 
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
 "Plug 'dracula/vim', {'as':'dracula'}   "color scheme
 Plug 'morhetz/gruvbox'
 Plug 'ludovicchabant/vim-gutentags'
