@@ -73,8 +73,6 @@ let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 if !isdirectory(s:vim_tags)
    silent! call mkdir(s:vim_tags, 'p')
 endif
-
-
 "--------------airline--------------"
 set laststatus=2
 let g:airline_theme='base16'
@@ -83,12 +81,9 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'default'
-
-
 "--------------Nerdtree--------------"
 map <F3> :NERDTreeMirror<CR>
 map <F3> :NERDTreeToggle<CR>
-
 "--------------Parentheses--------------"
 "inoremap ( ()<Esc>i
 "inoremap [ []<Esc>i
